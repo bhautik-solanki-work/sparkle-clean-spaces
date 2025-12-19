@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { GradientButton } from "@/components/ui/gradient-button";
 import { Phone, Droplets } from "lucide-react";
 
 const Header = () => {
@@ -51,13 +51,13 @@ const Header = () => {
           </nav>
 
           {/* CTA */}
-          <Button variant="default" size="default" className="hidden sm:flex">
+          <GradientButton className="hidden sm:flex">
             <Phone className="w-4 h-4 mr-2" />
             Call Now
-          </Button>
-          <Button variant="default" size="icon" className="sm:hidden">
+          </GradientButton>
+          <GradientButton className="sm:hidden">
             <Phone className="w-4 h-4" />
-          </Button>
+          </GradientButton>
         </div>
       </div>
     </motion.header>
