@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Phone, Droplets } from "lucide-react";
+import { Phone } from "lucide-react";
+import logo from "@/assets/logo.svg";
 
 const Header = () => {
   return (
@@ -14,9 +15,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <Droplets className="w-5 h-5 text-primary-foreground" />
-            </div>
+            <img src={logo} alt="CleanPro Logo" className="w-10 h-10" />
             <span className="font-display font-bold text-xl text-foreground">
               CleanPro
             </span>
